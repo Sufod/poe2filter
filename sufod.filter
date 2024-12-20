@@ -2,7 +2,7 @@
 ##### Highlights
 #######################################################
 
-## START Unique that are POTENTIALLY worth several divine ##
+## Unique that are POTENTIALLY worth several divine
 
 Show
   Rarity Unique
@@ -16,8 +16,6 @@ Show
   PlayEffect Red
   MinimapIcon 2 Red Star
 
-## END Unique that are POTENTIALLY worth several divine ##
-
 ## START Lottery-Tier Chancing Targets ##
 
 Show
@@ -29,8 +27,6 @@ Show
   SetBorderColor 0 150 0 90
   SetBackgroundColor 66 167 55
   PlayEffect Green Temp
-
-## END Lottery-Tier Chancing Targets ##
 
 Show
   Rarity Unique
