@@ -5,7 +5,7 @@
 ## Unique that are POTENTIALLY worth several divine
 Show
   Rarity Unique
-  BaseType "Utility Belt" "Omen Crest Shield" "Silk Robe"
+  BaseType == "Utility Belt" "Omen Crest Shield" "Silk Robe"
   ItemLevel >= 82
   SetFontSize 45
   SetTextColor 175 96 37 255
@@ -18,7 +18,7 @@ Show
 ## White base Chancing Targets
 Show
   Rarity Normal
-  BaseType "Utility Belt" "Omen Crest Shield" "Silk Robe"
+  BaseType == "Utility Belt" "Omen Crest Shield" "Silk Robe"
   ItemLevel >= 82
   SetFontSize 35
   SetTextColor 255 255 255 255
@@ -39,11 +39,33 @@ Show
 
 ## Rare Amulet Ring & Belt
 Show
-  Class "Amulet" "Ring" "Belt"
+  Class "Ring"
+  BaseType "Breach Ring"
+  Rarity Rare
+  SetFontSize 40
+  SetTextColor 233 206 75
+  SetBorderColor 0 240 190 255
+  SetBackgroundColor 20 20 0 255
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Kite
+
+Show
+  Class "Amulet" "Ring"
   Rarity Rare
   SetFontSize 40
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
+  SetBackgroundColor 0 80 30 255
+  PlayEffect Yellow
+  MinimapIcon 1 Yellow Kite
+
+Show
+  Class "Belt"
+  Rarity Rare
+  SetFontSize 40
+  SetTextColor 233 206 75
+  SetBorderColor 233 206 75
+  SetBackgroundColor 0 40 10 255
   PlayEffect Yellow
   MinimapIcon 1 Yellow Kite
 
@@ -71,7 +93,7 @@ Show
 Show
   BaseType "Skill Gem" "Spirit Gem"
   ItemLevel = 18
-  SetFontSize 30
+  SetFontSize 25
   SetTextColor 0 240 190
   PlayEffect Cyan Temp
 
@@ -208,7 +230,7 @@ Show
 
 Show
   Class "Stackable Currency"
-  BaseType "Mirror of Kalandra" "Perfect Jeweller's Orb" "Greater Jeweller's Orb" "Divine Orb"
+  BaseType == "Mirror of Kalandra" "Perfect Jeweller's Orb" "Greater Jeweller's Orb" "Divine Orb"
   SetFontSize 45
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
@@ -219,7 +241,7 @@ Show
 
 Show
   Class "Stackable Currency"
-  BaseType "Orb of Annulment" "Chaos Orb" "Orb of Alchemy" "Gemcutter's Prism" "Orb of Chance" "Glassblower's Bauble" "Exalted Orb" 
+  BaseType == "Orb of Annulment" "Chaos Orb" "Orb of Alchemy" "Gemcutter's Prism" "Orb of Chance" "Glassblower's Bauble" "Exalted Orb" 
   SetFontSize 40
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -271,7 +293,7 @@ Show
 #######################################################
 
 Show
-  BaseType "Djinn Barya" "Inscribed Ultimatum"
+  BaseType == "Djinn Barya" "Inscribed Ultimatum"
   PlayEffect White
 
 #######################################################
@@ -280,7 +302,7 @@ Show
 
 Show
   Class "Charms"
-  BaseType "Thawing Charm" "Amethyst Charm" "Golden Charm"
+  BaseType == "Thawing Charm" "Amethyst Charm" "Golden Charm"
   PlayEffect Cyan
   SetFontSize 30
 
@@ -293,6 +315,7 @@ Hide
 #######################################################
 
 Show
+  Class "Jewels"
   Rarity Rare
   BaseType "Sapphire" "Emerald" "Ruby"
   SetFontSize 40
@@ -303,7 +326,8 @@ Show
   MinimapIcon 1 Yellow Diamond
 
 Show
-  Rarity Magic
+  Class "Jewels" 
+  Rarity Magic Normal
   BaseType "Sapphire" "Emerald" "Ruby"
   SetFontSize 35
   SetTextColor 50 125 255 250
@@ -311,14 +335,6 @@ Show
   SetBackgroundColor 0 20 40 255
   PlayEffect Blue Temp
   MinimapIcon 2 Blue Diamond
-
-Show
-  Rarity Normal
-  BaseType "Sapphire" "Emerald" "Ruby"
-  SetFontSize 30
-  SetBorderColor 0 240 190 255
-  PlayEffect Grey Temp
-  MinimapIcon 2 Grey Diamond
 
 #######################################################
 ##### Relics
@@ -351,7 +367,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Distilled Fear"
+  BaseType == "Distilled Fear"
   SetFontSize 45
   SetTextColor 255 255 255 255
   SetBorderColor 255 255 255 255
@@ -362,7 +378,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Distilled Disgust"
+  BaseType == "Distilled Disgust"
   SetFontSize 45
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -373,7 +389,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Distilled Envy" "Distilled Paranoia" "Distilled Despair"
+  BaseType == "Distilled Envy" "Distilled Paranoia" "Distilled Despair"
   SetFontSize 40
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -384,7 +400,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Distilled Greed" "Distilled Guilt" "Distilled Ire"
+  BaseType == "Distilled Greed" "Distilled Guilt" "Distilled Ire"
   SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -427,7 +443,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Breachstone"
+  BaseType == "Breachstone"
   PlayEffect Brown
   SetFontSize 45
   SetTextColor 180 0 255 255
@@ -439,7 +455,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Esh's Catalyst" "Neural Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Tul's Catalyst" "Xoph's Catalyst" 
+  BaseType == "Esh's Catalyst" "Neural Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Tul's Catalyst" "Xoph's Catalyst" 
   SetFontSize 35
   SetTextColor 255 255 255 255
   SetBorderColor 210 20 210 255
@@ -450,7 +466,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Breach Splinter"
+  BaseType == "Breach Splinter"
   SetFontSize 25
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -459,7 +475,7 @@ Show
   
 Show
   Class Currency
-  BaseType "Adaptive Catalyst" "Flesh Catalyst" "Skittering Catalyst" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Carapace Catalyst"
+  BaseType == "Adaptive Catalyst" "Flesh Catalyst" "Skittering Catalyst" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Carapace Catalyst"
   SetFontSize 30
   SetTextColor 255 255 255 255
   SetBorderColor 115 115 115 255
@@ -492,7 +508,7 @@ Show
 # Victorious Fate            5
 
 Show
-  BaseType "An Audience with the King"
+  BaseType == "An Audience with the King"
   SetFontSize 45
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
@@ -502,7 +518,7 @@ Show
   MinimapIcon 0 Red Kite
 
 Show
-  BaseType "Deadly Fate" "Cowardly Fate" "Victorious Fate"
+  BaseType == "Deadly Fate" "Cowardly Fate" "Victorious Fate"
   SetFontSize 40
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -521,7 +537,7 @@ Show
 #######################################################
 
 Show
-  Class "Expedition Logbooks"
+  Class == "Expedition Logbooks"
   SetFontSize 40
   SetTextColor 255 85 85 255
   SetBorderColor 255 85 85 255
@@ -531,7 +547,7 @@ Show
   MinimapIcon 1 Yellow UpsideDownHouse
 
 Show
-  Class "Currency"
+  Class == "Currency"
   BaseType "Exotic Coinage"
   SetFontSize 40
   SetTextColor 0 0 0 255
@@ -582,7 +598,7 @@ Show
 # Essence of the Infinite         0.1
 
 Show
-  BaseType "Greater Essence of Torment" "Greater Essence of Haste" "Greater Essence of Ruin"
+  BaseType == "Greater Essence of Torment" "Greater Essence of Haste" "Greater Essence of Ruin"
   SetFontSize 40
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -592,7 +608,7 @@ Show
   MinimapIcon 2 Brown Raindrop
 
 Show
-  BaseType "Greater Essence of Sorcery" "Greater Essence of Electricity" "Greater Essence of Enhancement" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of the Mind" "Greater Essence of the Body" "Greater Essence of Battle" "Greater Essence of the Infinite"
+  BaseType == "Greater Essence of Sorcery" "Greater Essence of Electricity" "Greater Essence of Enhancement" "Greater Essence of Flames" "Greater Essence of Ice" "Greater Essence of the Mind" "Greater Essence of the Body" "Greater Essence of Battle" "Greater Essence of the Infinite"
   SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -602,7 +618,7 @@ Show
   MinimapIcon 2 Orange Raindrop
 
 Show
-  BaseType "Essence of Torment" "Essence of Ruin" "Essence of Haste"
+  BaseType == "Essence of Torment" "Essence of Ruin" "Essence of Haste"
   SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -612,7 +628,7 @@ Show
   MinimapIcon 2 Yellow Raindrop
 
 Show
-  BaseType "Essence of Sorcery" "Essence of Electricity" "Essence of Enhancement" "Essence of Flames" "Essence of Ice" "Essence of the Mind" "Essence of the Body" "Essence of Battle" "Essence of the Infinite"
+  BaseType == "Essence of Sorcery" "Essence of Electricity" "Essence of Enhancement" "Essence of Flames" "Essence of Ice" "Essence of the Mind" "Essence of the Body" "Essence of Battle" "Essence of the Infinite"
   SetFontSize 30
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -654,7 +670,7 @@ Show
 
 Show
   Class "Omen"
-  BaseType "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
+  BaseType == "Omen of Whittling" "Omen of Sinistral Erasure" "Omen of Dextral Erasure" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
   SetFontSize 45
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
@@ -665,7 +681,7 @@ Show
 
 Show
   Class "Omen"
-  BaseType "Omen of Amelioration" "Omen of Corruption"
+  BaseType == "Omen of Amelioration" "Omen of Corruption"
   SetFontSize 35
   SetTextColor 255 255 255 255
   SetBorderColor 255 255 255 255
@@ -676,7 +692,7 @@ Show
 
 Show
   Class "Omen"
-  BaseType "Greater Annulment" "Omen of Resurgence" "Omen of Sinistral Exaltation" "Omen of Dextral Exaltation" "Omen of Greater Exaltation" "Omen of Sinistral Alchemy" "Omen of Refreshment" "Omen of Dextral Alchemy" "Omen of Sinistral Coronation"
+  BaseType == "Omen of Greater Annulment" "Omen of Resurgence" "Omen of Sinistral Exaltation" "Omen of Dextral Exaltation" "Omen of Greater Exaltation" "Omen of Sinistral Alchemy" "Omen of Refreshment" "Omen of Dextral Alchemy" "Omen of Sinistral Coronation"
   SetFontSize 30
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -687,7 +703,7 @@ Show
 
 Show
   Class "Omen"
-  BaseType "Dextral Coronation"
+  BaseType == "Omen of Dextral Coronation"
   PlayEffect Yellow
   MinimapIcon 2 Yellow Circle
 
@@ -721,7 +737,7 @@ Show
 
 Show
   Class "Socketable"
-  BaseType "Soul Core of Azcapa"
+  BaseType == "Soul Core of Azcapa"
   SetFontSize 45
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
@@ -732,7 +748,7 @@ Show
 
 Show
   Class "Socketable"
-  BaseType "Soul Core of Citaqualotl" "Core of Tacati" "Core of Zalatl"
+  BaseType == "Soul Core of Citaqualotl" "Soul Core of Tacati" "Soul Core of Zalatl"
   SetFontSize 35
   SetTextColor 255 255 255 255
   SetBorderColor 255 255 255 255
@@ -743,7 +759,7 @@ Show
 
 Show
   Class "Socketable"
-  BaseType "Soul Core of Jiquani" "Core of Puhuarte"
+  BaseType == "Soul Core of Jiquani" "Soul Core of Puhuarte"
   SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -754,7 +770,7 @@ Show
 
 Show
   Class "Socketable"
-  BaseType "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Quipolatl" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zantipi"
+  BaseType == "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Quipolatl" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zantipi"
   SetFontSize 30
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -776,8 +792,10 @@ Show
 
 # Special B Tier - Any Runes
 Show 
-  BaseType " Rune"
+  Class "Socketable"
+  BaseType "Rune"
   SetFontSize 25
+  SetTextColor 0 240 190
   PlayEffect Cyan Temp
 
 #######################################################
