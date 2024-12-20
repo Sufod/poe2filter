@@ -12,7 +12,21 @@ Show
   SetBackgroundColor 255 255 255 255
   PlayAlertSound 6 300
   PlayEffect Red
-  MinimapIcon 0 Red Star
+  MinimapIcon 2 Red Star
+
+## START Lottery-Tier Chancing Targets ##
+
+Show
+  Rarity Normal
+  BaseType "Utility Belt" "Omen Crest Shield" "Silk Robe"
+  ItemLevel >= 82
+  SetFontSize 35
+  SetTextColor 255 255 255 255
+  SetBorderColor 0 150 0 90
+  SetBackgroundColor 66 167 55
+  PlayEffect Green Temp
+
+## END Lottery-Tier Chancing Targets ##
 
 Show
   Rarity Unique
@@ -22,7 +36,7 @@ Show
   SetBackgroundColor 53 13 13 255
   PlayEffect Brown
   PlayAlertSound 3 300
-  MinimapIcon 2 Brown Star
+  MinimapIcon 1 Brown Star
   
 Show
   Class "Amulet" "Ring" "Belt"
@@ -31,7 +45,7 @@ Show
   SetTextColor 233 206 75
   SetBorderColor 233 206 75
   PlayEffect Yellow
-  MinimapIcon 2 Yellow Kite
+  MinimapIcon 1 Yellow Kite
 
 Show
   BaseType "Skill Gem" "Spirit Gem"
@@ -42,7 +56,7 @@ Show
   SetBackgroundColor 255 255 255 255
   PlayAlertSound 6 300
   PlayEffect Red
-  MinimapIcon 0 Red Star
+  MinimapIcon 0 Red Pentagon
 
 Show
   BaseType "Skill Gem" "Spirit Gem"
@@ -51,7 +65,7 @@ Show
   SetTextColor 0 240 190
   PlayEffect Cyan
   PlayAlertSound 2 300
-  MinimapIcon 2 Yellow Diamond
+  MinimapIcon 1 Yellow Pentagon
 
 Show
   BaseType "Skill Gem" "Spirit Gem"
@@ -59,7 +73,6 @@ Show
   SetFontSize 30
   SetTextColor 0 240 190
   PlayEffect Cyan
-  MinimapIcon 2 Grey Diamond
 
 Show
   BaseType "Support Gem"
@@ -68,11 +81,7 @@ Show
   PlayEffect Cyan
 
 Hide
-  BaseType "Skill Gem"
-  ItemLevel <= 18
-
-Hide
-  BaseType "Spirit Gem"
+  BaseType "Spirit Gem" "Skill Gem"
   ItemLevel <= 17
 
 Show
@@ -89,12 +98,14 @@ Show
   MinimapIcon 2 Yellow Kite
 
 Show
-  Quality >= 15
-
+  Rarity Normal Magic
+  Quality == 20
+  SetTextColor 0 240 190 255
+  SetBorderColor 0 240 190 255
+  SetBackgroundColor 0 75 30 255
+  
 Show
-  BaseType "Ultimate Life Flask"
-  Quality > 15
-
+  Quality >= 15
 
 #######################################################
 ##### Static waystones
@@ -106,16 +117,16 @@ Show
   SetFontSize 40
   SetTextColor 0 0 0 255
   SetBackgroundColor 235 235 235 255
-  PlayAlertSound 2 300
+  PlayAlertSound 2 200
   PlayEffect Red
-  MinimapIcon 1 Red Square
+  MinimapIcon 0 Red Square
 
 Show
   BaseType "Waystone"
-  WaystoneTier > 13
+  WaystoneTier >= 13
   SetFontSize 35
   SetTextColor 0 0 0 255
-  SetBackgroundColor 235 235 235 255
+  SetBackgroundColor 200 200 200 255
   PlayEffect Orange
   MinimapIcon 1 Orange Square
 
@@ -125,7 +136,7 @@ Show
   SetFontSize 30
   SetTextColor 255 255 255 255
   SetBackgroundColor 20 20 0 255
-  MinimapIcon 1 Yellow Square
+  MinimapIcon 2 Yellow Square
 
 Show
   BaseType "Waystone"
@@ -288,7 +299,7 @@ Show
   SetBorderColor 220 220 0 255
   SetBackgroundColor 120 120 0 225
   PlayEffect Yellow Temp
-  MinimapIcon 2 Yellow Diamond
+  MinimapIcon 1 Yellow Diamond
 
 Show
   Rarity Magic
