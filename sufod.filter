@@ -3,7 +3,6 @@
 #######################################################
 
 ## Unique that are POTENTIALLY worth several divine
-
 Show
   Rarity Unique
   BaseType "Utility Belt" "Omen Crest Shield" "Silk Robe"
@@ -16,8 +15,7 @@ Show
   PlayEffect Red
   MinimapIcon 2 Red Star
 
-## START Lottery-Tier Chancing Targets ##
-
+## White base Chancing Targets
 Show
   Rarity Normal
   BaseType "Utility Belt" "Omen Crest Shield" "Silk Robe"
