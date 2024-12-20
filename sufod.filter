@@ -55,8 +55,8 @@ Show
   SetBorderColor 0 240 190
   SetBackgroundColor 255 255 255 255
   PlayAlertSound 6 300
-  PlayEffect Red
-  MinimapIcon 0 Red Pentagon
+  PlayEffect Cyan
+  MinimapIcon 0 Cyan Pentagon
 
 Show
   BaseType "Skill Gem" "Spirit Gem"
@@ -65,20 +65,20 @@ Show
   SetTextColor 0 240 190
   PlayEffect Cyan
   PlayAlertSound 2 300
-  MinimapIcon 1 Yellow Pentagon
+  MinimapIcon 1 Cyan Pentagon
 
 Show
   BaseType "Skill Gem" "Spirit Gem"
   ItemLevel = 18
   SetFontSize 30
   SetTextColor 0 240 190
-  PlayEffect Cyan
+  PlayEffect Cyan Temp
 
 Show
   BaseType "Support Gem"
   SetFontSize 25
   SetTextColor 0 240 190
-  PlayEffect Cyan
+  PlayEffect Cyan Temp
 
 Hide
   BaseType "Spirit Gem" "Skill Gem"
@@ -87,7 +87,7 @@ Hide
 Show
   BaseType "Gold"
   StackSize >= 1000
-  PlayEffect White
+  PlayEffect White Temp
 
 #######################################################
 ##### Filter Exceptions
