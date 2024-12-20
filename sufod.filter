@@ -26,6 +26,7 @@ Show
   SetBackgroundColor 66 167 55
   PlayEffect Green Temp
 
+## All other unique
 Show
   Rarity Unique
   SetFontSize 35
@@ -35,7 +36,8 @@ Show
   PlayEffect Brown
   PlayAlertSound 3 300
   MinimapIcon 1 Brown Star
-  
+
+## Rare Amulet Ring & Belt
 Show
   Class "Amulet" "Ring" "Belt"
   Rarity Rare
@@ -45,6 +47,7 @@ Show
   PlayEffect Yellow
   MinimapIcon 1 Yellow Kite
 
+## lvl 20 Skill / Spirit Gem
 Show
   BaseType "Skill Gem" "Spirit Gem"
   ItemLevel = 20
