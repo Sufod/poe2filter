@@ -2,6 +2,10 @@
 ##### Highlights
 #######################################################
 
+#######################################################
+##### Unique Section
+#######################################################
+
 ## Unique that are POTENTIALLY worth several divine
 Show
   Rarity Unique
@@ -15,6 +19,17 @@ Show
   PlayEffect Red
   MinimapIcon 2 Red Star
 
+## All other unique
+Show
+  Rarity Unique
+  SetFontSize 35
+  SetTextColor 175 96 37 255
+  SetBorderColor 175 96 37 255
+  SetBackgroundColor 53 13 13 255
+  PlayEffect Brown
+  PlayAlertSound 3 300
+  MinimapIcon 1 Brown Star
+
 ## White base Chancing Targets
 Show
   Rarity Normal
@@ -26,16 +41,9 @@ Show
   SetBackgroundColor 66 167 55
   PlayEffect Green Temp
 
-## All other unique
-Show
-  Rarity Unique
-  SetFontSize 35
-  SetTextColor 175 96 37 255
-  SetBorderColor 175 96 37 255
-  SetBackgroundColor 53 13 13 255
-  PlayEffect Brown
-  PlayAlertSound 3 300
-  MinimapIcon 1 Brown Star
+#######################################################
+##### Rare
+#######################################################
 
 ## Rare Amulet Ring & Belt
 Show
@@ -68,6 +76,10 @@ Show
   SetBackgroundColor 0 40 10 255
   PlayEffect Yellow
   MinimapIcon 1 Yellow Kite
+
+#######################################################
+##### Skill Gems
+#######################################################
 
 ## lvl 20 Skill / Spirit Gem
 Show
@@ -107,13 +119,17 @@ Hide
   BaseType "Spirit Gem" "Skill Gem"
   ItemLevel <= 17
 
+#######################################################
+##### Gold
+#######################################################
+
 Show
   BaseType "Gold"
   StackSize >= 1000
   PlayEffect White Temp
 
 #######################################################
-##### Filter Exceptions
+##### Socket / Quality Items
 #######################################################
 
 Show
@@ -131,7 +147,7 @@ Show
   Quality >= 15
 
 #######################################################
-##### Static waystones
+##### Waystones
 #######################################################
 
 Show
@@ -198,6 +214,10 @@ Show
 #######################################################
 ##### Regular currency
 #######################################################
+
+# Currency price to help with tiering
+# Last updat 12/12/1994 ...
+
 
 # Mirror of Kalandra      ?
 # Perfect Jeweller's Orb  72
@@ -348,6 +368,9 @@ Show
 ##### Delirium
 #######################################################
 
+# Distilled price to help with tiering
+# Last updat 12/12/1994 ...
+
 # Distilled Isolation  205
 # Simulacrum           108
 # Distilled Suffering  71
@@ -424,6 +447,9 @@ Show
 ##### Breach
 #######################################################
 
+# Breach price to help with tiering
+# Last updat 12/12/1994 ...
+
 # Breachstone           38
 #
 # Esh's Catalyst        0.3
@@ -497,6 +523,9 @@ Show
 ##### Fragments
 #######################################################
 
+# Currency price to help with tiering
+# Last updat 12/12/1994 ...
+
 # An Audience with the King  167
 #
 # Faded Crisis Fragment      27
@@ -568,6 +597,9 @@ Show
 #######################################################
 ##### Essences
 #######################################################
+
+# Essence price to help with tiering
+# Last updat 12/12/1994 ...
 
 # Greater Essence of Torment      26
 # Greater Essence of Haste        23
@@ -647,6 +679,9 @@ Show
 ##### Omens
 #######################################################
 
+# Omens price to help with tiering
+# Last updat 12/12/1994 ...
+
 # Omen of Whittling             112
 # Omen of Sinistral Erasure     ?
 # Omen of Dextral Erasure       ?
@@ -715,6 +750,9 @@ Show
 #######################################################
 ##### Soul Cores
 #######################################################
+
+# Sould Cores price to help with tiering
+# Last updat 12/12/1994 ...
 
 # Soul Core of Azcapa      44
 # Soul Core of Zalatl      12
