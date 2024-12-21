@@ -17,7 +17,7 @@
 ## Unique that are POTENTIALLY worth several divine
 Show
   Rarity Unique
-  BaseType == "Utility Belt" "Omen Crest Shield" "Silk Robe"
+  BaseType == "Utility Belt" "Omen Crest Shield" "Silk Robe" "Grand Regalia"
   ItemLevel >= 82
   SetFontSize 45
   SetTextColor 175 96 37 255
