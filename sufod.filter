@@ -845,6 +845,47 @@ Show
   PlayEffect Cyan Temp
 
 #######################################################
+##### Decorator Rare Stuff
+#######################################################
+
+Show
+  ItemLevel >= 84
+  Rarity Rare
+  SetTextColor 250 165 0 255
+  Continue
+
+Show
+  ItemLevel >= 75
+  Rarity Rare
+  SetTextColor 245 190 0 255
+  Continue
+
+Show
+  ItemLevel >= 68
+  Rarity Rare
+  Continue
+
+Show
+  BaseType "Expert "
+  SetFontSize 35
+  Rarity == Rare
+  SetBorderColor 255 180 0 255
+  Continue
+
+Show
+  BaseType "Advanced "
+  SetFontSize 30
+  Rarity == Rare
+  SetBorderColor 255 180 0 150
+  Continue
+
+### Rare decorator (reduce font) ###
+Show
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces" "Wands" "Belt"
+  SetFontSize 20
+  Rarity == Rare
+
+#######################################################
 ##### Hide stuff
 #######################################################
 
