@@ -1,4 +1,26 @@
 #######################################################
+##### Notes
+#######################################################
+
+#Divine tier drop collors
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+#Exalt tier drop
+SetFontSize 40
+SetTextColor 0 0 0 255
+SetBorderColor 0 0 0 255
+SetBackgroundColor 240 90 35 255
+PlayAlertSound 2 300
+PlayEffect Yellow
+MinimapIcon 1 Yellow Circle
+
+#######################################################
 ##### Highlights
 #######################################################
 
@@ -38,16 +60,29 @@ Show
   PlayAlertSound 3 300
   MinimapIcon 1 Brown Star
 
+
+
 ## White base Chancing Targets
 Show
   Rarity Normal
-  BaseType == "Utility Belt" "Omen Crest Shield" "Silk Robe"
+  BaseType == "Omen Crest Shield" "Silk Robe"
   ItemLevel >= 82
   SetFontSize 35
   SetTextColor 255 255 255 255
   SetBorderColor 0 150 0 90
   SetBackgroundColor 66 167 55
   PlayEffect Green Temp
+
+Show
+  Rarity Normal
+  BaseType == "Heavy Belt"
+  ItemLevel >= 50
+  SetFontSize 35
+  SetTextColor 255 255 255 255
+  SetBorderColor 0 150 0 90
+  SetBackgroundColor 66 167 55
+  PlayEffect Green Temp
+
 
 #######################################################
 ##### Rare
@@ -89,7 +124,7 @@ Show
 ##### Skill Gems
 #######################################################
 
-## lvl 20 Skill / Spirit Gem
+## lvl 20 Skill / Spirit Gem (3div/5div 22/12/2024)
 Show
   BaseType "Skill Gem" "Spirit Gem"
   ItemLevel = 20
@@ -101,7 +136,18 @@ Show
   PlayEffect Cyan
   MinimapIcon 0 Cyan Pentagon
 
+# lvl 19 spirit (5ex 22/12/2024)
 Show
+  BaseType "Spirit Gem"
+  ItemLevel = 19
+  SetFontSize 35
+  SetTextColor 0 240 190
+  PlayEffect Cyan
+  PlayAlertSound 2 300
+  MinimapIcon 1 Cyan Pentagon
+
+# lvl 19 (< 1d 22/12/2024) 
+Hide
   BaseType "Skill Gem" "Spirit Gem"
   ItemLevel = 19
   SetFontSize 35
@@ -110,14 +156,14 @@ Show
   PlayAlertSound 2 300
   MinimapIcon 1 Cyan Pentagon
 
-Show
+Hide
   BaseType "Skill Gem" "Spirit Gem"
   ItemLevel = 18
   SetFontSize 25
   SetTextColor 0 240 190
   PlayEffect Cyan Temp
 
-Show
+Hide
   BaseType "Support Gem"
   SetFontSize 25
   SetTextColor 0 240 190
@@ -140,18 +186,18 @@ Show
 ##### Socket / Quality Items
 #######################################################
 
-Show
+Hide
   Sockets 3
   MinimapIcon 2 Yellow Kite
 
-Show
+Hide
   Rarity Normal Magic
   Quality == 20
   SetTextColor 0 240 190 255
   SetBorderColor 0 240 190 255
   SetBackgroundColor 0 75 30 255
   
-Show
+Hide
   Quality >= 15
 
 #######################################################
@@ -183,23 +229,22 @@ Show
   SetFontSize 30
   SetTextColor 255 255 255 255
   SetBackgroundColor 20 20 0 255
-  MinimapIcon 2 Yellow Square
 
-Show
+Hide
   BaseType "Waystone"
   WaystoneTier > 9
   SetFontSize 30
   SetTextColor 255 255 255 255
   SetBackgroundColor 20 20 0 255
 
-Show
+Hide
   BaseType "Waystone"
   WaystoneTier > 4
   SetFontSize 25
   SetTextColor 255 255 255 255
   SetBackgroundColor 20 20 0 255
 
-Show
+Hide
   BaseType "Waystone"
   WaystoneTier >= 1
   SetFontSize 25
@@ -281,15 +326,13 @@ Show
 Show
   Class "Stackable Currency"
   BaseType "Armourer's Scrap" "Arcanist's Etcher" "Blacksmith's Whetstone"  "Artificer's Orb" "Regal Orb" "Lesser Jeweller's Orb" "Vaal Orb"
-  SetFontSize 30
+  SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 210 178 135 255
-  PlayAlertSound 2 300
   PlayEffect Grey
-  MinimapIcon 2 Grey Circle
 
-Show
+Hide
   Class "Stackable Currency"
   BaseType "Orb of Transmutation" "Orb of Augmentation"
   SetFontSize 25
@@ -298,6 +341,17 @@ Show
   SetBackgroundColor 20 20 0 255
 
 Show
+  Class "Stackable Currency"
+  BaseType "Divine Shard" "Mirror Shard"
+  SetFontSize 45
+  SetTextColor 255 0 0 255
+  SetBorderColor 255 0 0 255
+  SetBackgroundColor 255 255 255 255
+  PlayAlertSound 6 300
+  PlayEffect Red
+  MinimapIcon 0 Red Star
+
+Hide
   Class "Stackable Currency"
   BaseType "Shard"
   SetFontSize 20
@@ -308,7 +362,7 @@ Show
 Show
   Class Currency
   BaseType "Simulacrum Splinter"
-  SetFontSize 35
+  SetFontSize 40
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 210 178 135 255
@@ -490,7 +544,7 @@ Show
 Show
   Class Currency
   BaseType == "Esh's Catalyst" "Neural Catalyst" "Reaver Catalyst" "Chayula's Catalyst" "Tul's Catalyst" "Xoph's Catalyst" 
-  SetFontSize 35
+  SetFontSize 40
   SetTextColor 255 255 255 255
   SetBorderColor 210 20 210 255
   SetBackgroundColor 65 20 80
@@ -501,7 +555,7 @@ Show
 Show
   Class Currency
   BaseType == "Breach Splinter"
-  SetFontSize 25
+  SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 255 200 150 255
@@ -510,7 +564,7 @@ Show
 Show
   Class Currency
   BaseType == "Adaptive Catalyst" "Flesh Catalyst" "Skittering Catalyst" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Carapace Catalyst"
-  SetFontSize 30
+  SetFontSize 35
   SetTextColor 255 255 255 255
   SetBorderColor 115 115 115 255
   SetBackgroundColor 65 20 80
@@ -520,7 +574,7 @@ Show
 Show
   Class Currency
   BaseType "Catalyst" # Safety Catch-all
-  SetFontSize 30
+  SetFontSize 35
   SetTextColor 255 255 255 255
   SetBorderColor 115 115 115 255
   SetBackgroundColor 65 20 80
@@ -597,7 +651,7 @@ Show
 Show
   Class "Currency"
   BaseType "Artifact"
-  SetFontSize 35
+  SetFontSize 40
   SetBorderColor 200 100 60 255
   SetBackgroundColor 30 5 5 255
   MinimapIcon 2 Yellow Pentagon
@@ -669,7 +723,7 @@ Show
 
 Show
   BaseType == "Essence of Sorcery" "Essence of Electricity" "Essence of Enhancement" "Essence of Flames" "Essence of Ice" "Essence of the Mind" "Essence of the Body" "Essence of Battle" "Essence of the Infinite"
-  SetFontSize 30
+  SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 210 178 135 255
@@ -677,7 +731,7 @@ Show
 
 Show
   BaseType "Essence" # Safety Catch-all
-  SetFontSize 30
+  SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 210 178 135 255
@@ -725,7 +779,7 @@ Show
 Show
   Class "Omen"
   BaseType == "Omen of Amelioration" "Omen of Corruption"
-  SetFontSize 35
+  SetFontSize 40
   SetTextColor 255 255 255 255
   SetBorderColor 255 255 255 255
   SetBackgroundColor 240 90 35 255
@@ -736,7 +790,7 @@ Show
 Show
   Class "Omen"
   BaseType == "Omen of Greater Annulment" "Omen of Resurgence" "Omen of Sinistral Exaltation" "Omen of Dextral Exaltation" "Omen of Greater Exaltation" "Omen of Sinistral Alchemy" "Omen of Refreshment" "Omen of Dextral Alchemy" "Omen of Sinistral Coronation"
-  SetFontSize 30
+  SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 240 90 35 255
@@ -817,7 +871,7 @@ Show
 Show
   Class "Socketable"
   BaseType == "Soul Core of Opiloti" "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Quipolatl" "Soul Core of Ticaba" "Soul Core of Topotante" "Soul Core of Tzamoto" "Soul Core of Xopec" "Soul Core of Zantipi"
-  SetFontSize 30
+  SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 249 150 25 255
@@ -828,7 +882,7 @@ Show
 Show
   Class "Socketable"
   BaseType "Soul Core" # Safety Catch-all
-  SetFontSize 30
+  SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 249 150 25 255
@@ -837,7 +891,7 @@ Show
   MinimapIcon 2 White Circle
 
 # Special B Tier - Any Runes
-Show 
+Hide 
   Class "Socketable"
   BaseType "Rune"
   SetFontSize 25
