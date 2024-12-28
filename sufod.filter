@@ -155,9 +155,9 @@ Hide
 ##### Gold
 #######################################################
 
-Show
+Hide
   BaseType "Gold"
-  StackSize >= 1000
+  StackSize >= 2000
   PlayEffect White Temp
 
 #######################################################
@@ -299,16 +299,15 @@ Show
 
 Show
   Class "Stackable Currency"
-  BaseType "Armourer's Scrap" "Arcanist's Etcher" "Blacksmith's Whetstone"  "Artificer's Orb" "Regal Orb" "Lesser Jeweller's Orb" "Vaal Orb"
+  BaseType "Artificer's Orb" "Regal Orb" "Vaal Orb"
   SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 210 178 135 255
-  PlayEffect Grey
 
 Hide
   Class "Stackable Currency"
-  BaseType "Orb of Transmutation" "Orb of Augmentation"
+  BaseType "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb" "Armourer's Scrap" "Arcanist's Etcher" "Blacksmith's Whetstone"
   SetFontSize 25
   SetTextColor 190 178 135 255
   SetBorderColor 190 178 135 255
@@ -535,7 +534,7 @@ Show
   SetBackgroundColor 255 200 150 255
   PlayEffect Yellow Temp
   
-Show
+Hide
   Class Currency
   BaseType == "Adaptive Catalyst" "Flesh Catalyst" "Skittering Catalyst" "Sibilant Catalyst" "Uul-Netol's Catalyst" "Carapace Catalyst"
   SetFontSize 35
@@ -545,7 +544,7 @@ Show
   PlayEffect Purple Temp
   MinimapIcon 2 Grey Kite
 
-Show
+Hide
   Class Currency
   BaseType "Catalyst" # Safety Catch-all
   SetFontSize 35
@@ -695,7 +694,7 @@ Show
   PlayEffect White
   MinimapIcon 2 Yellow Raindrop
 
-Show
+Hide
   BaseType == "Essence of Sorcery" "Essence of Electricity" "Essence of Enhancement" "Essence of Flames" "Essence of Ice" "Essence of the Mind" "Essence of the Body" "Essence of Battle" "Essence of the Infinite"
   SetFontSize 35
   SetTextColor 0 0 0 255
