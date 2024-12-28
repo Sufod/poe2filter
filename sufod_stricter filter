@@ -50,7 +50,7 @@ Show
 ## Unique that are POTENTIALLY worth several divine
 Show
   Rarity Unique
-  BaseType == "Heavy Belt" "Omen Crest Shield" "Silk Robe" "Stellar Amulet" "Sapphire Ring" "Amethyst Ring" "Emerald Ring" "Gold Amulet"
+  BaseType == "Heavy Belt" "Omen Crest Shield" "Silk Robe" "Stellar Amulet" "Sapphire Ring" "Amethyst Ring" "Emerald Ring" "Gold Amulet" "Iron Greaves"
   SetFontSize 45
   SetTextColor 0 0 0 255
   SetBorderColor 255 255 255 255
@@ -89,10 +89,6 @@ Hide
   SetBorderColor 175 96 37 255
   SetBackgroundColor 53 13 13 255
   PlayEffect Brown
-  PlayAlertSound 3 300
-  MinimapIcon 1 Brown Star
-
-
 
 ## White base Chancing Targets
 Show
@@ -193,7 +189,6 @@ Hide
 Hide
   BaseType "Gold"
   StackSize >= 2000
-  PlayEffect White Temp
 
 #######################################################
 ##### Socket / Quality Items
@@ -484,9 +479,6 @@ Hide
   SetTextColor 255 255 255 255
   SetBorderColor 210 20 210 255
   SetBackgroundColor 65 20 80
-  PlayAlertSound 2 300
-  PlayEffect Purple Temp
-  MinimapIcon 1 Grey Kite
 
 Show
   Class Currency
@@ -504,8 +496,6 @@ Hide
   SetTextColor 255 255 255 255
   SetBorderColor 115 115 115 255
   SetBackgroundColor 65 20 80
-  PlayEffect Purple Temp
-  MinimapIcon 2 Grey Kite
 
 Hide
   Class Currency
@@ -514,8 +504,6 @@ Hide
   SetTextColor 255 255 255 255
   SetBorderColor 115 115 115 255
   SetBackgroundColor 65 20 80
-  PlayEffect Purple Temp
-  MinimapIcon 2 Grey Kite
 
 #######################################################
 ##### Fragments
@@ -645,7 +633,6 @@ Hide
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 210 178 135 255
-  MinimapIcon 2 White Raindrop
 
 Show
   BaseType "Essence" # Safety Catch-all
@@ -708,28 +695,6 @@ Show
 ##### Soul Cores
 #######################################################
 
-# Sould Cores price to help with tiering
-# Last updat 12/12/1994 ...
-
-# Soul Core of Azcapa      222 (22/12/2024)
-# Soul Core of Zalatl      12
-#
-# Soul Core of Citaqualotl 4
-# Soul Core of Tacati      4
-#
-# Soul Core of Jiquani     2
-# Soul Core of Puhuarte    2
-#
-# Soul Core of Opiloti     1
-# Soul Core of Atmohua     1
-# Soul Core of Cholotl     1
-# Soul Core of Quipolatl   1
-# Soul Core of Ticaba      1
-# Soul Core of Topotante   1
-# Soul Core of Tzamoto     1
-# Soul Core of Xopec       1
-# Soul Core of Zantipi     1
-
 Show
   Class "Socketable"
   BaseType == "Soul Core of Azcapa"
@@ -791,7 +756,6 @@ Hide
   BaseType "Rune"
   SetFontSize 25
   SetTextColor 0 240 190
-  PlayEffect Cyan Temp
 
 #######################################################
 ##### Decorator Rare Stuff
