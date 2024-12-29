@@ -93,17 +93,7 @@ Hide
 ## White base Chancing Targets
 Show
   Rarity Normal
-  BaseType == "Omen Crest Shield" "Silk Robe"
-  ItemLevel >= 82
-  SetFontSize 35
-  SetTextColor 255 255 255 255
-  SetBorderColor 0 150 0 90
-  SetBackgroundColor 66 167 55
-  PlayEffect Green Temp
-
-Show
-  Rarity Normal
-  BaseType == "Heavy Belt"
+  BaseType == "Stellar Amulet"
   ItemLevel >= 50
   SetFontSize 35
   SetTextColor 255 255 255 255
