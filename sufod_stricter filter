@@ -286,7 +286,7 @@ Show
 
 Show
   Class "Stackable Currency"
-  BaseType "Artificer's Orb" "Regal Orb" "Vaal Orb"
+  BaseType "Artificer's Orb" "Regal Orb" "Vaal Orb" "Armourer's Scrap"
   SetFontSize 35
   SetTextColor 0 0 0 255
   SetBorderColor 0 0 0 255
@@ -294,7 +294,7 @@ Show
 
 Hide
   Class "Stackable Currency"
-  BaseType "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb" "Armourer's Scrap" "Arcanist's Etcher" "Blacksmith's Whetstone"
+  BaseType "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb" "Arcanist's Etcher" "Blacksmith's Whetstone"
   SetFontSize 25
   SetTextColor 190 178 135 255
   SetBorderColor 190 178 135 255
