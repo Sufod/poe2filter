@@ -3,6 +3,10 @@
 ##### Notes
 #######################################################
 
+#update log :
+# 3 janvier 2025 : Hide : Djinn & Ultimatum, map <T15 & stack of gold < 4500
+# 3 janvier 2025 : Decorator : en + gros les items ES + baguettes & sceptre (spark meta)
+
 #Use https://poe2scout.com/ to price check
 
 #Divine tier drop collors
@@ -209,7 +213,7 @@ Show
   PlayEffect Red
   MinimapIcon 0 Red Square
 
-Show
+Hide
   BaseType "Waystone"
   WaystoneTier >= 13
   SetFontSize 35
@@ -218,7 +222,7 @@ Show
   PlayEffect Orange
   MinimapIcon 1 Orange Square
 
-Show
+Hide
   BaseType "Waystone"
   WaystoneTier >= 11
   SetFontSize 30
@@ -335,7 +339,7 @@ Show
 ##### Trials
 #######################################################
 
-Show
+Hide
   BaseType == "Djinn Barya" "Inscribed Ultimatum"
   PlayEffect White
 
@@ -770,21 +774,65 @@ Show
   Continue
 
 Show
+  Class == "Foci" "Wands"
+  Rarity == Rare
+  SetFontSize 35
+  SetBackgroundColor 125 125 50 230
+  Continue
+
+Show
+  Class == "Sceptres"
+  Rarity == Rare
+  SetFontSize 35
+  SetBackgroundColor 125 125 50 230
+  Continue
+
+Show
+  Class == "Body Armour" "Helmet" "Gloves" "Boots"
+  Rarity == Rare
+  SetFontSize 35
+  SetBackgroundColor 125 125 50 230
+  BaseArmour == 0
+  BaseEnergyShield > 0
+  BaseEvasion == 0
+  Continue
+
+### Rare decorator (reduce font) ###
+Show
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces" "Belt"
+  SetFontSize 25
+  Rarity == Rare
+  Continue
+
+Show
   BaseType "Expert "
   SetFontSize 35
   Rarity == Rare
   SetBorderColor 255 180 0 255
+  Continue
 
 Show
   BaseType "Advanced "
   SetFontSize 30
   Rarity == Rare
   SetBorderColor 255 180 0 150
+  Continue
 
-### Rare decorator (reduce font) ###
 Show
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces" "Wands" "Belt"
-  SetFontSize 25
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces"
+  SetFontSize 20
+  Rarity == Rare
+  BaseArmour > 0
+
+Show
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces"
+  SetFontSize 20
+  Rarity == Rare
+  BaseEvasion > 0
+
+Show
+  Class "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces"
+  SetFontSize 20
   Rarity == Rare
 
 #######################################################
@@ -804,4 +852,4 @@ Hide
 
 Hide
   BaseType "Gold"
-  StackSize < 500
+  StackSize < 4500
