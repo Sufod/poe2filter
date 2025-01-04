@@ -205,7 +205,7 @@ Show
 
 Show
   BaseType "Waystone"
-  WaystoneTier = 15
+  WaystoneTier >= 15
   SetFontSize 40
   SetTextColor 0 0 0 255
   SetBackgroundColor 235 235 235 255
@@ -220,7 +220,6 @@ Hide
   SetTextColor 0 0 0 255
   SetBackgroundColor 200 200 200 255
   PlayEffect Orange
-  MinimapIcon 1 Orange Square
 
 Hide
   BaseType "Waystone"
