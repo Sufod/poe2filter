@@ -78,7 +78,7 @@ Show
 ## Unique that are POTENTIALLY worth several exalt
 Show
   Rarity Unique
-  BaseType == "Jade Amulet" "Solar Amulet" "Gold Ring" "Pearl Ring" "Topaz Ring" "Crimson Amulet" "Amber Amulet" "Azure Amulet"  "Tribal Mask" "Chain Tiara" "Moulded Mitts" "Linen Wraps" "Explorer Armour" "Diamond" "Shrine Sceptre" "Silk Robe"
+  BaseType == "Jade Amulet" "Solar Amulet" "Gold Ring" "Pearl Ring" "Topaz Ring" "Crimson Amulet" "Amber Amulet" "Azure Amulet"  "Tribal Mask" "Chain Tiara" "Moulded Mitts" "Linen Wraps" "Explorer Armour" "Diamond" "Shrine Sceptre"
   SetTextColor 200 99 0 255
   SetBorderColor 255 0 0 255
   SetBackgroundColor 0 0 0 255
@@ -98,14 +98,12 @@ Show
   MinimapIcon 0 Purple Star
 
 ## All other unique
-Show
+Hide
   Rarity Unique
   SetTextColor 200 99 0 255
   SetBorderColor 31 207 207 255
   SetBackgroundColor 0 0 0 255
   SetFontSize 35
-  PlayAlertSound 3 300
-  MinimapIcon 0 Cyan Star
 
 ## White base Chancing Targets
 Show
@@ -273,7 +271,7 @@ Show
   PlayAlertSound 2 300
   MinimapIcon 1 Yellow Circle
 
-Hide
+Show
   Class "Stackable Currency"
   BaseType "Artificer's Orb" "Regal Orb" "Vaal Orb" "Armourer's Scrap"
   SetFontSize 35
@@ -758,6 +756,5 @@ Hide
   BaseType "Scroll of Wisdom"
 
 Hide
-  Class "Flask" 
+  Class "Flask" "Ring" "Amulet"
   Rarity <= Magic
-
