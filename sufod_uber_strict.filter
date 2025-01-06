@@ -7,15 +7,54 @@
 
 #######################################################
 ##### Override rules, use to personalise (I only show rare boots for example)
+##### Show stuff
 #######################################################
 
+#show all boots for example
+#Show
+#  Rarity Rare
+#  Class == "Boots"
+#  SetBorderColor 26 196 26 255
+#  SetBackgroundColor 0 0 0 255
+#  SetFontSize 35
+
+
+
+# Show rare of 2 biggest ES base (gloves, boots, chest & helmet) 
 Show
-  Rarity Rare
-  Class == "Boots"
-  SetTextColor 0 0 0 255
-  SetBorderColor 255 234 0 255
-  SetBackgroundColor 255 190 0 95
+  BaseType = "Expert Intricate Gloves" "Expert Sombre Gloves" "Expert Feathered Sandals" "Expert Silk Slippers" "Expert Altar Robe" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Feathered Tiara" "Expert Chain Tiara"
   SetFontSize 35
+  Rarity == Rare
+  SetBackgroundColor 0 0 0 255
+  SetBorderColor 255 180 0 255
+
+#######################################################
+##### Override rules, use to personalise (I hide everything else)
+##### Hide stuff
+#######################################################
+
+
+Hide
+  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces"
+  SetFontSize 20
+  Rarity == Rare
+
+Hide
+  Class "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces" "Belts" "Sceptre" "Wand" "Foci"
+  SetFontSize 20
+  Rarity == Rare
+
+Hide
+  Class "Belt" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Focus" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
+  Rarity <= Magic
+
+Hide
+  BaseType "Scroll of Wisdom"
+
+Hide
+  Class "Flask" "Ring" "Amulet"
+  Rarity <= Magic
+
 
 #######################################################
 ##### Unique Section
@@ -234,7 +273,7 @@ Show
 
 Show
   Class "Stackable Currency"
-  BaseType == "Mirror of Kalandra" "Perfect Jeweller's Orb" "Greater Jeweller's Orb" "Divine Orb"
+  BaseType == "Mirror of Kalandra" "Perfect Jeweller's Orb" "Divine Orb"
   SetFontSize 45
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
@@ -242,6 +281,17 @@ Show
   PlayAlertSound 6 300
   PlayEffect Red
   MinimapIcon 0 White Circle
+
+Show
+  Class "Stackable Currency"
+  BaseType == "Greater Jeweller's Orb"
+  SetTextColor 255 255 255 255
+  SetBorderColor 255 255 255 255
+  SetBackgroundColor 240 90 35 255
+  SetFontSize 43
+  PlayAlertSound 10 300
+  MinimapIcon 0 Red Circle
+  PlayEffect Red
 
 Show
   Class "Stackable Currency"
@@ -288,15 +338,6 @@ Hide
   SetBorderColor 0 0 0 255
   SetBackgroundColor 200 155 100 255
 
-Show
-  Class Currency
-  BaseType "Simulacrum Splinter"
-  SetFontSize 40
-  SetTextColor 0 0 0 255
-  SetBorderColor 0 0 0 255
-  SetBackgroundColor 210 178 135 255
-  PlayAlertSound 2 300
-  MinimapIcon 2 Grey Circle
 
 #######################################################
 ##### Trials
@@ -411,6 +452,29 @@ Show
   PlayEffect Grey
   MinimapIcon 2 Grey Circle
 
+
+#stack
+Show
+  Class Currency
+  BaseType "Simulacrum Splinter"
+  StackSize > 1
+  SetFontSize 40
+  SetTextColor 0 0 0 255
+  SetBorderColor 0 0 0 255
+  SetBackgroundColor 240 90 35 255
+  PlayAlertSound 2 300
+  MinimapIcon 0 Grey Circle  
+  
+Show
+  Class Currency
+  BaseType "Simulacrum Splinter"
+  SetFontSize 40
+  SetTextColor 0 0 0 255
+  SetBorderColor 0 0 0 255
+  SetBackgroundColor 210 178 135 255
+  PlayAlertSound 2 300
+  MinimapIcon 2 Grey Circle
+
 #######################################################
 ##### Breach
 #######################################################
@@ -435,6 +499,18 @@ Hide
   SetBorderColor 210 20 210 255
   SetBackgroundColor 65 20 80
 
+#stack
+Show
+  Class Currency
+  BaseType "Breach Splinter"
+  StackSize > 2
+  SetFontSize 40
+  SetTextColor 0 0 0 255
+  SetBorderColor 0 0 0 255
+  SetBackgroundColor 240 90 35 255
+  PlayAlertSound 2 300
+  MinimapIcon 0 Grey Circle  
+
 Show
   Class Currency
   BaseType == "Breach Splinter"
@@ -452,7 +528,7 @@ Hide
   SetBorderColor 115 115 115 255
   SetBackgroundColor 65 20 80
 
-Hide
+Show
   Class Currency
   BaseType "Catalyst" # Safety Catch-all
   SetFontSize 35
@@ -702,41 +778,3 @@ Hide
   SetFontSize 25
   SetTextColor 0 240 190
 
-#######################################################
-##### Decorator Rare Stuff
-#######################################################
-
-Show
-  BaseType "Expert "
-  SetFontSize 35
-  Rarity == Rare
-  SetBorderColor 255 180 0 255
-  BaseArmour == 0
-  BaseEnergyShield > 0
-  BaseEvasion == 0
-
-
-Hide
-  Class "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces"
-  SetFontSize 20
-  Rarity == Rare
-
-Hide
-  Class "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces" "Belts" "Sceptre" "Wand" "Foci"
-  SetFontSize 20
-  Rarity == Rare
-
-#######################################################
-##### Hide stuff
-#######################################################
-
-Hide
-  Class "Belt" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Focus" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
-  Rarity <= Magic
-
-Hide
-  BaseType "Scroll of Wisdom"
-
-Hide
-  Class "Flask" "Ring" "Amulet"
-  Rarity <= Magic
