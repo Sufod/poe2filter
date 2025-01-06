@@ -38,7 +38,8 @@ Hide
   Rarity == Rare
 
 Hide
-  BaseType == "Unset Ring" "Iron Ring" "Emerald Ring" "Crimson Amulet" "Amber Amulet" "Bloodstone Amulet" 
+  BaseType == "Unset Ring" "Iron Ring" "Emerald Ring" "Crimson Amulet" "Amber Amulet" "Bloodstone Amulet"
+  ItemLevel < 79
   SetFontSize 20
   Rarity == Rare
 
