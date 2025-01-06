@@ -40,6 +40,11 @@ Hide
   Rarity == Rare
 
 Hide
+  BaseType == "Unset Ring" "Iron Ring" "Emerald Ring" "Crimson Amulet" "Amber Amulet" "Bloodstone Amulet" 
+  SetFontSize 20
+  Rarity == Rare
+
+Hide
   Class "Bows" "Crossbows" "One Hand Maces" "Quivers" "Quarterstaves" "Shields" "Staves" "Two Hand Maces" "Belts" "Sceptre" "Wand" "Foci"
   SetFontSize 20
   Rarity == Rare
@@ -47,9 +52,6 @@ Hide
 Hide
   Class "Belt" "Body Armour" "Boots" "Gloves" "Helmets" "Bows" "Crossbows" "Focus" "One Hand Maces" "Quivers" "Quarterstaves" "Sceptres" "Shields" "Staves" "Two Hand Maces" "Wands"
   Rarity <= Magic
-
-Hide
-  BaseType "Scroll of Wisdom"
 
 Hide
   Class "Flask" "Ring" "Amulet"
@@ -313,7 +315,7 @@ Show
 
 Hide
   Class "Stackable Currency"
-  BaseType "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb" "Arcanist's Etcher" "Blacksmith's Whetstone"
+  BaseType "Orb of Transmutation" "Orb of Augmentation" "Lesser Jeweller's Orb" "Arcanist's Etcher" "Blacksmith's Whetstone" "Scroll of Wisdom"
   SetFontSize 25
   SetTextColor 190 178 135 255
   SetBorderColor 190 178 135 255
@@ -321,7 +323,7 @@ Hide
 
 Show
   Class "Stackable Currency"
-  BaseType "Mirror Shard"
+  BaseType "Mirror Shard" 
   SetFontSize 45
   SetTextColor 255 0 0 255
   SetBorderColor 255 0 0 255
