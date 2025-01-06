@@ -18,8 +18,6 @@
 #  SetBackgroundColor 0 0 0 255
 #  SetFontSize 35
 
-
-
 # Show rare of 2 biggest ES base (gloves, boots, chest & helmet) 
 Show
   BaseType = "Expert Intricate Gloves" "Expert Sombre Gloves" "Expert Feathered Sandals" "Expert Silk Slippers" "Expert Altar Robe" "Expert Keth Raiment" "Expert Hexer's Robe" "Expert Feathered Tiara" "Expert Chain Tiara"
@@ -54,7 +52,7 @@ Hide
   Rarity <= Magic
 
 Hide
-  Class "Flask" "Ring" "Amulet"
+  Class "Flask" "Ring" "Amulet" "Charm"
   Rarity <= Magic
 
 
