@@ -27,4 +27,8 @@ This filter is designed to make our looting experience smoother and more efficie
 2. Place it in your POE2 folder (usually in 'Documents/My Games/Path of Exile 2')
 3. Select the filter in the game options
 
+## To do List
+1. Take into account stack of currency and splinter
+2. 
+
 Happy looting, Exiles!
