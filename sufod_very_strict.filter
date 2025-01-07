@@ -843,8 +843,8 @@ Hide
   Rarity <= Magic
 
 Hide
-  Class "Amulet" "Ring" "Jewel" "Belt"
-  Rarity <=Magic
+  Class "Amulet" "Ring" "Jewel"
+  Rarity <= Magic
   ItemLevel <= 78
 
 Hide
