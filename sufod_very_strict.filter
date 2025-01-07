@@ -843,6 +843,11 @@ Hide
   Rarity <= Magic
 
 Hide
+  Class "Amulet" "Ring" "Jewel"
+  Rarity <= Magic
+  ItemLevel <= 78
+
+Hide
   BaseType "Scroll of Wisdom"
 
 Hide
