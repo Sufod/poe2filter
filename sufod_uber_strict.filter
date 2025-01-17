@@ -116,13 +116,14 @@ Show
 ## Unique that are GUARANTIED worth several exalt
 Show
   Rarity Unique
-  BaseType == "Crucible Tower Shield" "Fine Bracers" "Conqueror Plate" "Burnished Gauntlets" "Feathered Tiara" "Heavy Crown" "Altar Robe" "Grand Visage" "Grand Regalia"
+  BaseType == "Crucible Tower Shield" "Fine Bracers" "Conqueror Plate" "Burnished Gauntlets" "Feathered Tiara" "Heavy Crown" "Altar Robe" "Grand Visage" "Grand Regalia" "Trimmed Greaves"
   SetTextColor 255 105 0 255
   SetBorderColor 0 0 0 255
   SetBackgroundColor 113 14 14 255
   SetFontSize 45
   PlayAlertSound 10 300
   MinimapIcon 0 Orange Star
+
 
 ## Unique that are POTENTIALLY worth several exalt
 Show
